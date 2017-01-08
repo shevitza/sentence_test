@@ -1,11 +1,11 @@
 var app = angular.module("app", []);
 app.controller("FormController", ['$scope', function ($scope) {
-    $scope.left ='Left1';
+    $scope.left ='Ляво1';
     $scope.middle ='Mid4';
     $scope.right ='Right6';
 
     $scope.guess = "";
-    var correctAnswers = ['Left1 Mid3 Right7', 'Left4 Mid4 Right8', 'Left3 Mid4 Right6'];
+    var correctAnswers = ['Ляво1 Mid3 Right7', 'Left4 Mid4 Right8', 'Left3 Mid4 Right6'];
 
     $scope.checkResult = function () {
         console.log('check');
