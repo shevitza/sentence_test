@@ -1,0 +1,21 @@
+
+// 
+// http://stackoverflow.com/questions/16681390/jquery-get-id-of-radio-button-by-testing-value
+// 
+// $('input[type=radio][name=Criteria1Score]:checked').attr('id')
+
+// <legend>Criteria1</legend>
+// <label class="radio inline">
+//     Great
+//     <input id="Criteria1Score1" class="Score" name="Criteria1Score" type="radio" value="Great"/>
+// </label>
+// <label class="radio inline">
+//     Good
+//     <input id="Criteria1Score2" class="Score" name="Criteria1Score" type="radio" value="Good"/>
+// </label>
+// <label class="radio inline">
+//     Bad
+//     <input id="Criteria1Score3" class="Score" name="Criteria1Score" type="radio" value="Bad"/>
+// </label>
+
+// <input type="button" onclick="alert($('input[type=radio][name=Criteria1Score]:checked').attr('id'))" value="click me to get id of checked input" />
