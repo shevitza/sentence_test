@@ -1,23 +1,23 @@
 var app = angular.module("app", []);
 app.controller("FormController", ['$scope', function ($scope) {
     var list = new Map();
-    list.set('l1', ' AngularJS');
+    list.set('l1', 'AngularJS ');
     list.set('l3', 'The dependency injection and in the services ');
     list.set('l4', 'The singleton pattern ');
-    list.set('l2', ' Angular  ');
+    list.set('l2', 'Angular ');
 
-    list.set('m4', 'use');
-    list.set('m3', ' restricts');
-    list.set('m2', ' enables ');
-    list.set('m1', ' comes ');
+    list.set('m4', 'use ');
+    list.set('m3', 'restricts');
+    list.set('m2', 'enables ');
+    list.set('m1', 'comes ');
 
-    list.set('r2', 'with a set of these directives built-in, like ngBind, ngModel, and ngClass.');
+    list.set('r2', ' with a set of these directives built-in, like ngBind, ngModel, and ngClass.');
     list.set('r6', ' singleton pattern.');
     list.set('r8', ' the use of a class more than once.');
     list.set('r7', ' using HTML as template language.');
 
 
-
+//initial selection must be random!
     $scope.left = 'l1';
     $scope.middle = 'm4';
     $scope.right = 'r6';
