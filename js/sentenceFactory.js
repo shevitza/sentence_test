@@ -19,6 +19,8 @@
         list.set('r6', ' singleton pattern.');
         list.set('r8', ' the use of a class more than once.');
         list.set('r7', ' using HTML as template language.');
+        
+
         var answers = ['l1 m2 r7', 'l4 m3 r8', 'l3 m4 r6', 'l1 m1 r2'];
         var initial={
             left:'l1',
