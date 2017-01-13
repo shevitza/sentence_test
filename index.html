@@ -6,6 +6,7 @@
 	<script src="js/angular.min.js"></script>
 	<script src="js/jquery-3.1.0.min.js"></script>
 	<script src="js/app.js"></script>
+	<script src="js/sentenceFactory.js"></script>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<style>
 		label {
@@ -18,41 +19,42 @@
 	<div ng-app="app" ng-controller="FormController">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-2">
-					<label for="l1"><input type="radio" id="l1" name="leftRadios" value="Left1"  ng-model="left"/> Left1</label>
-					<label for="l3"><input type="radio" id="l3" name="leftRadios" value="Left3"  ng-model="left"/> Left3</label>
-					<label for="l4"><input type="radio" id="l4" name="leftRadios" value="Left4"  ng-model="left"/> Left4 </label>
+				<div class="col-lg-4">
+					<label for="l1"><input type="radio" id="l1" name="leftRadios" value="l1"  ng-model="left"/> AngularJS</label>
+					<label for="l3"><input type="radio" id="l3" name="leftRadios" value="l3"  ng-model="left"/>The dependency injection and in the services</label>
+					<label for="l4"><input type="radio" id="l4" name="leftRadios" value="l4"  ng-model="left"/> The singleton pattern  </label>
+		
 				</div>
 				<div class="col-lg-2">
-					<label for="m4"><input type="radio" id="m4" name="middleRadios" value="Mid4"  ng-model="middle"/> Mid4</label>
-					<label for="m3"><input type="radio" id="m3" name="middleRadios" value="Mid3"  ng-model="middle"/> Mid3</label>
+					<label for="m4"><input type="radio" id="m4" name="middleRadios" value="m4"  ng-model="middle"/> use </label>
+					<label for="m3"><input type="radio" id="m3" name="middleRadios" value="m3"  ng-model="middle"/> restricts</label>
+					<label for="m4"><input type="radio" id="m2" name="middleRadios" value="m2"  ng-model="middle"/> enables </label>
+					<label for="m4"><input type="radio" id="m1" name="middleRadios" value="m1"  ng-model="middle"/> comes </label>
 				</div>
-				<div class="col-lg-2">
-					<label for="r6"><input type="radio" id="r6" name="rightRadios" value="Right6" ng-model="right"/> Right6</label>
-					<label for="r8"><input type="radio" id="r8" name="rightRadios" value="Right8" ng-model="right"/> Right8</label>
-					<label for="r7"><input type="radio" id="r7" name="rightRadios" value="Right7" ng-model="right"/> Right7</label>
+				<div class="col-lg-4">
+					<label for="r6"><input type="radio" id="r2" name="rightRadios" value="r2" ng-model="right"/> with a set of these directives built-in, like ngBind, ngModel, and ngClass</label>
+					<label for="r6"><input type="radio" id="r6" name="rightRadios" value="r6" ng-model="right"/> singleton pattern.</label>
+					<label for="r8"><input type="radio" id="r8" name="rightRadios" value="r8" ng-model="right"/> the use of a class more than once.</label>
+					<label for="r7"><input type="radio" id="r7" name="rightRadios" value="r7" ng-model="right"/> using HTML as template language.</label>
 				</div>
-
 			</div>
+
 
 			<div class="row">
 				<hr>
-				<div class="col-lg-2">
-					{{left.value}} - {{middle.value}} - {{right.value}} <br>
-				
-
+				<div class="col-lg-6">
+					Correct answers:<br> {{guess}}
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-6">
 					<button ng-click="checkResult()">Check!</button> {{result}}
 				</div>
-        <div class="col-lg-6">
-         Correct answers:<br> {{guess}}
-        </div>
+				<div class="col-lg-6">
+
+				</div>
 			</div>
 		</div>
-	1-3-7,4-4-8,3-4-6
 	</div>
 </body>
 
