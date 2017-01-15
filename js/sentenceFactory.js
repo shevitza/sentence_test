@@ -7,7 +7,7 @@
     function sentenceFactory() {
         var list = new Map();
         list.set('l1', 'AngularJS ');
-        list.set('l3', 'The dependency injection and in the services ');
+        list.set('l3', 'The dependency injection and the services ');
         list.set('l4', 'The singleton pattern ');
 
         list.set('m4', 'use ');
